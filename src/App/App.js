@@ -17,7 +17,7 @@ const App=()=>{
     const options=Object.keys(init)
 
     const handlerOfAll = (e)=>{
-        setState({...state, [e.target.id]:state[e.target.id]+1})        
+        setState(state=>({...state, [e.target.id]:state[e.target.id]+1}))        
     }
 
     const calculateStats=()=>{      
